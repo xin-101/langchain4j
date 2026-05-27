@@ -1,0 +1,59 @@
+# Java / Maven
+target/
+*.class
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Maven Wrapper
+.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+gen/
+
+# VS Code
+.vscode/
+
+# Eclipse / STS
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+desktop.ini
+
+# Frontend (Vue / Uni-app)
+node_modules/
+dist/
+unpackage/
+dev/
+*.log
+
+# Environment Variables (Keep .env-demo, ignore others)
+.env
+.env-poloai
+.env-local
+*.env.local
+*.env.*.local
+
+# Database / Local logs
+*.sql.log
+*.log

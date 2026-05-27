@@ -1,0 +1,40 @@
+spring:
+  application:
+    name: my-langchain4jtools
+  #连接数据库
+  datasource:
+    url: jdbc:mysql://localhost:3306/langchain4j
+    username: root
+    password: root
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: io.github.zh.mylangchain4jtools.entity
+  configuration:
+    map-underscore-to-camel-case: true
+
+langchain4j:
+  open-ai:
+    chat-model:
+      api-key: ${ApiKey}
+      base-url: ${BaseUrl}
+      model-name: ${ModelName}
+
+      log-requests: true
+      log-responses: true
+
+  #阿里百炼平台
+  community:
+    dashscope:
+      chat-model:
+        api-key: ${ApiKey}
+        base-url: ${BaseUrl}
+        model-name: ${ModelName}
+      streaming-chat-model:
+        api-key: ${ApiKey}
+        base-url: ${BaseUrl}
+        model-name: ${ModelName}
+
+logging:
+  level:
+    root: INFO
